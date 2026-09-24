@@ -1,0 +1,7 @@
+{
+  "name": "SENA Versátil - Inducción Interactiva",
+  "description": "Herramienta digital y pedagógica de inducción integral para nuevos aprendices del SENA, alineada con el Acuerdo 009 de 2024.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

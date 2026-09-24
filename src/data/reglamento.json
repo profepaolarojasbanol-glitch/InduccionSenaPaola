@@ -1,0 +1,137 @@
+{
+  "acuerdo": "Acuerdo 009 de 2024",
+  "titulo": "Reglamento del Aprendiz SENA",
+  "descripcion": "Estructura normativa que regula los derechos, deberes, prohibiciones, faltas y procedimientos formativos y disciplinarios de los aprendices del Servicio Nacional de Aprendizaje SENA.",
+  "capitulos": [
+    {
+      "id": 1,
+      "nombre": "Principios y Valores Institucionales",
+      "descripcion": "Lineamientos éticos y comportamentales que rigen la convivencia y formación en el SENA.",
+      "elementos": [
+        {
+          "tipo": "Principio",
+          "titulo": "Formación Profesional Integral",
+          "detalle": "Desarrollo simultáneo de competencias técnicas, humanas y sociales orientadas al trabajo productivo."
+        },
+        {
+          "tipo": "Valor",
+          "titulo": "Respeto, Honestidad y Solidaridad",
+          "detalle": "Reconocimiento de la dignidad humana y el compromiso con la comunidad educativa y el país."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Derechos Esenciales del Aprendiz",
+      "descripcion": "Garantías institucionales durante el proceso formativo.",
+      "elementos": [
+        {
+          "id": "D1",
+          "titulo": "Inducción Integral",
+          "desc": "Recibir inducción completa sobre el programa de formación, políticas, servicios y normativa institucional al iniciar el proceso."
+        },
+        {
+          "id": "D2",
+          "titulo": "Ambientes de Formación Dotados",
+          "desc": "Disponer de infraestructura, talleres, laboratorios, bibliotecas y herramientas tecnológicas adecuadas para el aprendizaje."
+        },
+        {
+          "id": "D3",
+          "titulo": "Trato Digno e Inclusivo",
+          "desc": "Ser tratado con respeto, equidad y sin discriminación por razones de género, raza, religión, opinión política o condición social."
+        },
+        {
+          "id": "D4",
+          "titulo": "Evaluación Transparente y Objetiva",
+          "desc": "Conocer los criterios de evaluación, recibir retroalimentación oportuna y solicitar revisión justificada de evidencias."
+        },
+        {
+          "id": "D5",
+          "titulo": "Conducto Regular",
+          "desc": "Hacer uso del conducto regular para presentar peticiones, solicitudes, recursos o reclamos ante las instancias competentes."
+        },
+        {
+          "id": "D6",
+          "titulo": "Estímulos e Incentivos",
+          "desc": "Postularse a monitorías, apoyos de sostenimiento, participación en eventos de bilingüismo, emprendimiento e innovación tecnológica."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "Deberes del Aprendiz",
+      "descripcion": "Obligaciones ineludibles para asegurar una convivencia armónica y un alto rendimiento académico.",
+      "elementos": [
+        {
+          "id": "DE1",
+          "titulo": "Cumplimiento de Actividades Formativas",
+          "desc": "Participar activamente en las sesiones presenciales y virtuales, entregando evidencias de aprendizaje en los plazos establecidos."
+        },
+        {
+          "id": "DE2",
+          "titulo": "Uso Adecuado de Recursos",
+          "desc": "Cuidar y hacer uso racional de los equipos, herramientas, software, bibliotecas e instalaciones del SENA y empresas aliadas."
+        },
+        {
+          "id": "DE3",
+          "titulo": "Respeto a la Comunidad Educativa",
+          "desc": "Mantener relaciones basadas en el respeto mutuo con instructores, compañeros, personal administrativo y directivos."
+        },
+        {
+          "id": "DE4",
+          "titulo": "Asistencia y Puntualidad",
+          "desc": "Asistir puntualmente a las actividades de formación y reportar oportunamente cualquier novedad o inasistencia justificada."
+        },
+        {
+          "id": "DE5",
+          "titulo": "Porte Correcto del Uniforme e Identificación",
+          "desc": "Utilizar el carné institucional de manera visible y portar el uniforme reglamentario en los ambientes que así lo requieran."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nombre": "Prohibiciones y Faltas",
+      "descripcion": "Conductas que vulneran el orden académico o disciplinario institucional.",
+      "elementos": [
+        {
+          "id": "F1",
+          "titulo": "Faltas Académicas",
+          "desc": "Plagio de evidencias, inasistencia injustificada reiterada, fraude en evaluaciones o incumplimiento reiterado de compromisos académicos."
+        },
+        {
+          "id": "F2",
+          "titulo": "Faltas Disciplinarias",
+          "desc": "Agresión física o verbal, porte o consumo de sustancias psicoactivas en el centro, daño intencional a bienes del SENA o suplantación."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nombre": "Medidas Formativas y Disciplinarias",
+      "descripcion": "Acciones pedagógicas orientadas a encauzar el comportamiento del aprendiz.",
+      "elementos": [
+        {
+          "id": "M1",
+          "titulo": "Llamado de Atención Verbal",
+          "desc": "Amonestación pedagógica inicial realizada por el instructor para corregir desviaciones actitudinales o académicas menores."
+        },
+        {
+          "id": "M2",
+          "titulo": "Plan de Mejoramiento",
+          "desc": "Acuerdo escrito con actividades pedagógicas específicas para superar deficiencias académicas o disciplinarias."
+        },
+        {
+          "id": "M3",
+          "titulo": "Llamado de Atención Escrito",
+          "desc": "Amonestación formal que queda registrada en la hoja de vida académica del aprendiz ante reincidencia."
+        },
+        {
+          "id": "M4",
+          "titulo": "Condicionamiento de Matrícula y Cancelación",
+          "desc": "Medidas extremas adoptadas por el Comité de Evaluación y Mediación ante faltas graves o incumplimiento de planes de mejoramiento."
+        }
+      ]
+    }
+  ]
+}
