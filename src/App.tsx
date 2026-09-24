@@ -34,7 +34,9 @@ import {
   User,
   Search,
   BarChart3,
-  Shield
+  Shield,
+  Sun,
+  Moon
 } from 'lucide-react';
 
 interface ProgramData {
@@ -67,6 +69,7 @@ interface CharacterizationForm {
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<'intro' | 'caracterizacion' | 'modulo1' | 'modulo2' | 'modulo3' | 'jsonModule' | 'registro' | 'evaluacion' | 'repositorio' | 'tutor' | 'admin'>('intro');
+  const [darkMode, setDarkMode] = useState(false);
   
   // Apprentice Data & Repository state
   const [apprenticeData, setApprenticeData] = useState<ApprenticeData>({
@@ -351,7 +354,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans flex flex-col">
+    <div className={`min-h-screen ${darkMode ? 'bg-slate-950 text-slate-100' : 'bg-slate-50 text-slate-900'} font-sans flex flex-col transition-colors duration-300`}>
       {/* Top SENA Brand Header */}
       <header className="bg-[#00324D] text-white shadow-lg border-b-4 border-[#39A900]">
         <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
@@ -369,8 +372,16 @@ export default function App() {
             </div>
           </div>
 
-          {/* Admin & Program Config Pills */}
+          {/* Admin, Dark Mode & Program Config Pills */}
           <div className="flex items-center gap-3">
+            <button
+              onClick={() => setDarkMode(!darkMode)}
+              className="bg-slate-800 hover:bg-slate-700 text-amber-300 p-2.5 rounded-xl border border-slate-700 shadow transition-all flex items-center justify-center"
+              title={darkMode ? 'Cambiar a Modo Claro' : 'Cambiar a Modo Oscuro'}
+            >
+              {darkMode ? <Sun className="w-5 h-5 text-amber-300" /> : <Moon className="w-5 h-5 text-amber-300" />}
+            </button>
+
             <button
               onClick={() => setActiveTab('admin')}
               className={`px-4 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 shadow-md transition-all border ${
