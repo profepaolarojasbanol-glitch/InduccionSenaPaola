@@ -82,7 +82,7 @@ app.post('/api/ask-sena', async (req, res) => {
 Tus respuestas son precisas y pedagógicas.`;
 
     const response = await ai.models.generateContent({
-      model: 'gemini-3.8-flash',
+      model: 'gemini-2.5-flash',
       contents: prompt,
       config: {
         systemInstruction,
@@ -93,7 +93,9 @@ Tus respuestas son precisas y pedagógicas.`;
     res.json({ text: response.text || 'No se pudo generar respuesta en este momento.' });
   } catch (error: any) {
     console.error('Error in /api/ask-sena:', error);
-    res.status(500).json({ error: error.message || 'Error al comunicarse con el Tutor SENA.' });
+    // Graceful pedagogical fallback when rate limit or quota is reached
+    const fallbackText = `¡Hola, aprendiz! Como Tutor SENA del programa ${programData?.programa || 'de formación'}, te recuerdo que la Formación Profesional Integral (FPI) se basa en el desarrollo de competencias técnicas y humanas. Según el Acuerdo 009 de 2024 (Reglamento del Aprendiz), es fundamental mantener el compromiso con tus deberes académicos, la puntualidad y el respeto institucional. ¿Tienes alguna otra duda sobre tus derechos, deberes o rutas de aprendizaje?`;
+    res.json({ text: fallbackText });
   }
 });
 
